@@ -1,0 +1,4 @@
+customer_id,customer_name,segment,city,state,region,total_sales,total_orders,last_order_date
+AA-10315,Alex Avila,Consumer,Minneapolis,Minnesota,Central,5563.56,11,2017-06-29
+AA-10375,Allen Armold,Consumer,Mesa,Arizona,West,1056.39,15,2017-12-11
+AA-10480,Andrew Allen,Consumer,Concord,North Carolina,South,1782.87,12,2017-04-15

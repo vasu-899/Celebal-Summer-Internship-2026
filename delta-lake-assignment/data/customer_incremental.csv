@@ -1,0 +1,7 @@
+customer_id,customer_name,segment,city,state,region,total_sales,total_orders,last_order_date
+AA-10315,Alex Avila,Consumer,Austin,Texas,Central,6000.0,6,2018-01-15
+AA-10375,Allen Armold,Corporate,Los Angeles,California,West,2500.0,5,2018-02-10
+AB-10060,Adrian Barton,Consumer,Houston,Texas,Central,15000.0,12,2018-03-05
+ZZ-99001,Vasu Dev,Premium,Karnal,Haryana,North,8500.0,7,2018-04-01
+ZZ-99002,Riya Sharma,Consumer,Delhi,Delhi,North,3200.0,4,2018-04-15
+ZZ-99003,Amit Kumar,Corporate,Mumbai,Maharashtra,West,12000.0,9,2018-05-01
