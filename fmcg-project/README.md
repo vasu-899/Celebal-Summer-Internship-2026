@@ -14,59 +14,68 @@ Post-acquisition of a smaller FMCG company, the organization faced:
 ---
 
 ## Solution Architecture
-┌─────────────────────────────────────────────────────────────┐
-│                    DATA SOURCES                              │
-│  Company A (Superstore ERP)  +  Company B (Legacy FMCG)    │
-└──────────────────┬──────────────────────────────────────────┘
-│
-▼
-┌─────────────────────────────────────────────────────────────┐
-│               BRONZE LAYER (Raw Ingestion)                   │
-│         Delta Tables: company_a_raw, company_b_raw          │
-└──────────────────┬──────────────────────────────────────────┘
-│
-▼
-┌─────────────────────────────────────────────────────────────┐
-│           SILVER LAYER (Cleaned & Standardized)              │
-│              Delta Table: unified_sales                      │
-└──────────────────┬──────────────────────────────────────────┘
-│
-▼
-┌─────────────────────────────────────────────────────────────┐
-│              GOLD LAYER (Business Ready)                     │
-│        Star Schema: fact_sales + 4 dimension tables          │
-│              4 KPI Tables for Analytics                      │
-└──────────────────┬──────────────────────────────────────────┘
-│
-▼
-┌─────────────────────────────────────────────────────────────┐
-│                BI & ANALYTICS                                │
-│         Databricks SQL + Power BI Dashboards                │
-└─────────────────────────────────────────────────────────────┘
+
+    Raw Sources
+    ├── Company A: Superstore ERP (CSV)
+    └── Company B: Legacy FMCG System
+              │
+              ▼
+    ┌─────────────────────────┐
+    │     BRONZE LAYER        │
+    │  Raw Data Ingestion     │
+    │  company_a_raw: 9,994   │
+    │  company_b_raw: 15      │
+    └───────────┬─────────────┘
+                │
+                ▼
+    ┌─────────────────────────┐
+    │     SILVER LAYER        │
+    │  Clean & Standardize    │
+    │  unified_sales: 10,001  │
+    └───────────┬─────────────┘
+                │
+                ▼
+    ┌─────────────────────────┐
+    │      GOLD LAYER         │
+    │  Business Ready Data    │
+    │  Star Schema + KPIs     │
+    └───────────┬─────────────┘
+                │
+                ▼
+    BI & Dashboards (Databricks SQL)
 
 ---
 
 ## Project Structure
-fmcg-project/
-├── notebooks/
-│   ├── 01_bronze_ingestion.ipynb
-│   ├── 02_silver_transformation.ipynb
-│   ├── 03_gold_aggregation.ipynb
-│   └── 04_pipeline_orchestration.ipynb
-├── data/
-│   ├── raw/
-│   │   └── superstore.csv
-│   └── incremental/
-│       └── company_b_data.csv
-├── screenshots/
-│   ├── 01_bronze/
-│   ├── 02_silver/
-│   ├── 03_gold/
-│   └── 04_pipeline/
-├── docs/
-│   ├── architecture.md
-│   └── data_dictionary.md
-├── README.md
+
+    fmcg-project/
+    │
+    ├── notebooks/
+    │   ├── 01_bronze_ingestion.ipynb
+    │   ├── 02_silver_transformation.ipynb
+    │   ├── 03_gold_aggregation.ipynb
+    │   └── 04_pipeline_orchestration.ipynb
+    │
+    ├── data/
+    │   ├── raw/
+    │   │   └── superstore.csv
+    │   └── incremental/
+    │       └── company_b_data.csv
+    │
+    ├── screenshots/
+    │   ├── 01_bronze/
+    │   ├── 02_silver/
+    │   ├── 03_gold/
+    │   └── 04_pipeline/
+    │
+    ├── docs/
+    │   ├── architecture.md
+    │   └── data_dictionary.md
+    │
+    ├── report/
+    │   └── project_report.pdf
+    │
+    └── README.md
 
 
 ---
