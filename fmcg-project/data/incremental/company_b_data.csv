@@ -1,0 +1,16 @@
+order_ref,order_date,cust_code,cust_name,business_type,zone,city,product_category,product_name,revenue,units_sold,discount_rate,net_profit,source_company,source_system
+B-ORD-1001,2018-01-05,B-CUST-001,Raj Enterprises,FMCG,North India,Delhi,Soap & Detergent,Surf Excel 1kg,2500.0,50,0.05,312.5,Company_B,Legacy_FMCG_System
+B-ORD-1002,2018-01-10,B-CUST-002,Mumbai Traders,Wholesale,West India,Mumbai,Beverages,Coca Cola 2L,1800.0,30,0.1,180.0,Company_B,Legacy_FMCG_System
+B-ORD-1003,2018-01-15,B-CUST-003,Chennai Retail,Retail,South India,Chennai,Snacks,Lays Classic 100g,3200.0,80,0.0,640.0,Company_B,Legacy_FMCG_System
+B-ORD-1004,2018-01-20,B-CUST-004,Kolkata Mart,FMCG,East India,Kolkata,Personal Care,Dove Shampoo 200ml,4500.0,60,0.15,675.0,Company_B,Legacy_FMCG_System
+B-ORD-1005,2018-01-25,B-CUST-001,Raj Enterprises,FMCG,North India,Delhi,Beverages,Pepsi 500ml,1200.0,100,0.0,240.0,Company_B,Legacy_FMCG_System
+B-ORD-1006,2018-02-01,B-CUST-005,Pune Distributors,Wholesale,West India,Pune,Soap & Detergent,Vim Bar 200g,900.0,120,0.1,90.0,Company_B,Legacy_FMCG_System
+B-ORD-1007,2018-02-05,B-CUST-006,Bangalore Hub,Retail,South India,Bangalore,Snacks,Kurkure 90g,1500.0,75,0.05,112.5,Company_B,Legacy_FMCG_System
+B-ORD-1008,2018-02-10,B-CUST-007,Hyderabad Store,FMCG,South India,Hyderabad,Personal Care,Head & Shoulders 180ml,2800.0,40,0.0,560.0,Company_B,Legacy_FMCG_System
+B-ORD-1009,2018-02-15,B-CUST-002,Mumbai Traders,Wholesale,West India,Mumbai,Beverages,Tropicana 1L,3600.0,45,0.1,360.0,Company_B,Legacy_FMCG_System
+B-ORD-1010,2018-02-20,B-CUST-008,Jaipur Retail,Retail,North India,Jaipur,Soap & Detergent,Ariel 2kg,5200.0,35,0.05,780.0,Company_B,Legacy_FMCG_System
+B-ORD-1011,2018-03-01,B-CUST-009,Ahmedabad Store,FMCG,West India,Ahmedabad,Snacks,Bingo 80g,1100.0,90,0.0,165.0,Company_B,Legacy_FMCG_System
+B-ORD-1012,2018-03-05,B-CUST-010,Lucknow Mart,Wholesale,North India,Lucknow,Personal Care,Pantene 200ml,3300.0,55,0.15,412.5,Company_B,Legacy_FMCG_System
+B-ORD-1013,2018-03-10,B-CUST-003,Chennai Retail,Retail,South India,Chennai,Beverages,Red Bull 250ml,4800.0,25,0.0,960.0,Company_B,Legacy_FMCG_System
+B-ORD-1014,2018-03-15,,Unknown Customer,FMCG,North India,Delhi,Soap & Detergent,Lifebuoy 100g,800.0,200,0.0,160.0,Company_B,Legacy_FMCG_System
+B-ORD-1015,2018-03-20,B-CUST-005,Pune Distributors,Wholesale,West India,Pune,Snacks,Haldirams 200g,2200.0,65,0.1,220.0,Company_B,Legacy_FMCG_System
