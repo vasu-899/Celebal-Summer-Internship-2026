@@ -1,0 +1,39 @@
+{
+  "report_generated_at": "2026-07-14 12:15:38",
+  "summary": {
+    "total_issues": 25,
+    "invalid_emails": 6,
+    "orphan_order_items": 10
+  },
+  "issues": [
+    "Fixed 46 wrong date formats",
+    "Filled 32 NULL customer_ids with UNKNOWN",
+    "Removed 0 duplicate orders",
+    "Normalized 32 product names",
+    "Removed 0 duplicate products",
+    "Found 6 invalid emails",
+    "Flagged 49 negative quantities as returns",
+    "Fixed 15 invalid discount_percent > 100",
+    "Removed 0 duplicate items"
+  ],
+  "invalid_email_customers": [
+    "CUST0068",
+    "CUST0151",
+    "CUST0173",
+    "CUST0177",
+    "CUST0461",
+    "CUST0496"
+  ],
+  "orphan_order_ids": [
+    "ORD99000",
+    "ORD99001",
+    "ORD99002",
+    "ORD99003",
+    "ORD99004",
+    "ORD99005",
+    "ORD99006",
+    "ORD99007",
+    "ORD99008",
+    "ORD99009"
+  ]
+}
